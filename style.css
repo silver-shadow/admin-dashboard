@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main-content";
+    height: 100vh;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: red;
+}
+
+.header {
+    grid-area: header;
+    background-color: pink;
+    display: grid;
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: green;
+    /* height: 30vh; */
+}
